@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Hazawa</title>
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <section>
+            <section>
+                <div class="empty">
+                    <br><br>
+                </div>
+            </section>
+            <div class="navbar">
+                <a href="page-home.html"><img src="image.png" class="logo"></a>
+                <ul>
+                    <li><a href="page-home.html">Home</a></li>
+                    <li id="active"><a href="page-news.html">News</a></li>
+                    <li><a href="PageHome.html">About Me</a></li>
+                    <li><a href="login.php">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="empty">
+                <br><br><br><br>
+            </div>
+        </section>
+        <section>
+            <div class="feature-gallery">
+                <div class="features1">
+                    <h2>About Hazawa</h2>
+                </div>
+            </div>
+            <div class="about-me">
+                <img src="Logo_.png">
+            </div>
+            <section>
+                <div class="empty">
+                    <br><br><br><br><br>
+                </div>
+            </section>
+            <div class="features1">
+                <h1>
+                    Hazawa is just an in-game that I always used everytime<br>
+                    I play new game. I took Hazawa from my favorite anime<br>
+                    and game character from the game and anime called<br>
+                    Bang Dream.
+                </h1>
+            </div>
+            <section>
+                <div class="empty">
+                    <br><br><br><br><br>
+                </div>
+            </section>
+            <div class="feature-gallery">
+                <div class="features1">
+                    <h3>Who is the Person behind Hazawa?</h3>
+                </div>
+            </div>
+            <div class="feature-gallery">
+                <div class="about-me">
+                    <img src="H.jpg">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="empty">
+                <br><br><br><br><br><br><br><br><br>
+            </div>
+        </section>
+        <div class="features1">
+            <h5>
+                Greetings! I'm Ricksel the Person behind the IGN of Hazawa<br>
+                I am currently a second year BSIT student, I love playing<br>
+                games and if you want to play with me just kindly message<br>
+                me and add my game accounts.<br>
+            </h5>
+            <h5>
+                I am Ricksel Cadano, I am an IT student in NU Fairview, I<br>
+                used to be an Architecture student therefore, I know a thing<br>
+                or two about drawings, sketching and drafting. I like reading<br>
+                and collecting books, I read various type of books including<br>
+                Novels, Philosophy and sometimes foreign language books.
+            </h5>
+        </div>
+        <footer>
+            <div class="footer-col">
+                <div class="logo-container">
+                    <img src="image.png" alt="Your Logo">
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Gallery</h4>
+                <ul>
+                    <li class="mini-gallery"><a href="news-bookreview-bookthief.html"><img src="C.jpg" alt="Team 1"></a></li>
+                    <li class="mini-gallery"><a href="news-games-gaming.html"><img src="LC.png" alt="Team 2"></a></li>
+                    <li class="mini-gallery"><a href="news-bookreview-si.html"><img src="A.jpg" alt="Team 3"></a></li>
+                    <li class="mini-gallery"><a href="news-drawings-toilet.html"><img src="1.jpg" alt="Team 3"></a></li>
+                </ul>
+            </div>        
+            <div class="footer-col">
+                <h4>Latest</h4>
+                <ul class="aye">
+                    <li><a href="news-bookreview-animalfarm.html">
+                        <p>
+                            Book Review: "Animal Farm" George Orwell
+                        </p>
+                    </a></li>
+                    <li><a href="news-bookreview-bookthief.html">
+                        <p>
+                            Book Review: "The Book Thief" Markus Zusak
+                        </p>
+                    </a></li>
+                    <li><a href="news-drawings-sparkle.html">
+                        <p>
+                            Childe is the best 
+                            character on this 
+                            g**damn game 
+                        </p>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Socials</h4>
+                <div class="links">
+                    <a href="https://www.facebook.com/ricksel.cadano" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/_RixeL_" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/rckslm.cdn/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script>
+            /* SCRIPT FOR THE FEATURE WORKS */
+            document.querySelectorAll('.div-gallery img').forEach(image =>{
+                image.onclick = () =>{
+                    document.querySelector('.popup-div-gallery').style.display = 'block';
+                    document.querySelector('.popup-div-gallery img').src = image.getAttribute('src');
+                }
+            });
+
+            document.querySelector('.popup-div-gallery span').onclick = () =>{
+                document.querySelector('.popup-div-gallery').style.display = 'none';
+            }
+
+            window.addEventListener('scroll', function() {
+                var navbar = document.getElementById('navbar');
+                if (window.scrollY > 0) {
+                    navbar.classList.add('shrink');
+                } else {
+                    navbar.classList.remove('shrink');
+                }
+            });
+            /* SCRIPT FOR THE FEATURE WORKS */
+        </script>
+    </body>
+</html>

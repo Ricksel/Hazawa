@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.2;
+}
+
+.empty{
+    background-color: rgb(18, 18, 18);
+    margin-top: 25px;
+}
+
+.logo-main{
+    width: 400px;
+
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(18, 18, 18);
+}
+
+.link{
+    color: rgb(18, 18, 18);
+}
+
+.text-danger {
+    color: white;
+}
+
+.text-danger .error {
+    font-size: 16px; /* Adjust the size as needed */
+}

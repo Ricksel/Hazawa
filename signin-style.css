@@ -1,0 +1,92 @@
+.comment-box{
+    width: 50%;
+    height: 100%;
+    border: 1px, solid, #ccc;
+    margin: 50px, 0;
+    padding: 10px 20px;
+    font-family: 'poppins', sans-serif;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-top: 80px;
+    box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+}
+.comment-box p{
+    text-align: left;
+    font-size: 17px;
+    color: white;
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+    font-family: 'popppins', sans-serif;
+    border: 1px solid #ddd;
+    color: black;
+}
+.comment-form button{
+    margin: 10px 0;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 3px;
+    color: black;
+}
+button:hover{
+    filter: brightness(65%);
+    cursor: pointer;
+}
+textarea{
+    resize: none;
+}
+@media(max-width: 900px){
+    .comment-box{
+        width: 80%;
+        margin: 5%;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.2;
+}
+
+.empty{
+    background-color: rgb(18, 18, 18);
+    margin-top: 25px;
+}
+
+.logo-main{
+    width: 400px;
+
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(18, 18, 18);
+}
+
+.link{
+    color: rgb(255, 255, 255);
+}
+
+.text-danger {
+    color: white;
+}
+
+.text-danger .error {
+    font-size: 16px; /* Adjust the size as needed */
+}
+
+h1 {
+    font-size: 35px;
+    color: white;
+}

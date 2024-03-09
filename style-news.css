@@ -1,0 +1,137 @@
+.feature-gallery .features1 h2{
+    margin: 20px auto;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+}
+
+.grid-body {
+    font-family: 'Poppins';
+    width: 100%;
+    min-height: 5vh;
+    display: grid;
+    place-items: center;
+    background-color:  rgb(18, 18, 18);
+}
+.grid-body .row{
+    width: 97%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    overflow-x: hidden;
+    padding: 5rem 0;
+}
+.grid-body .row .imgWrapper{
+    height: auto;
+    width: 500px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.grid-body .row .imgWrapper img{
+    filter: brightness(80%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.grid-body .row .imgWrapper:hover img{
+    filter: brightness(100%);
+    border: 3px solid white;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.grid-body .row .contentWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+.grid-body .row .contentWrapper span.textWrapper{
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.grid-body .row .contentWrapper span.textWrapper span{
+    display: inline-block;
+    background: white;
+    width: 70px;
+    height: 5px;
+}
+.grid-body .row .contentWrapper h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 20px;
+}
+.grid-body .row .contentWrapper p{
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+.grid-body .row .contentWrapper a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: white;
+    color: black;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    user-select: none;
+    border-radius: 7px;
+    border: 3px solid gray;
+}
+.grid-body .row .contentWrapper a:hover{
+    cursor: pointer;
+    color: white;
+    background: black;
+    border-radius: 7px;
+    border: 3px solid rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.contentWrapper .content .textWrapper{
+    color:white;   
+}
+.contentWrapper .content h1{
+    color: white;   
+}
+.contentWrapper .content p{
+    color: gray;   
+}
+
+@media (max-width: 1000px){
+    .grid-body .row .imgWrapper {
+        width: 400px;
+        height: 90%;
+    }
+    .row .contentWrapper .content-txt{
+        width: 90%;
+        height: 90%;
+        overflow: hidden;
+    }
+}
+@media (max-width: 874px){
+    .grid-body .row .imgWrapper {
+        width: 400px;
+        height: 80%;
+    }
+    .row .contentWrapper .content p{
+        font-size: 15px;
+        line-height: 24px;
+        padding-bottom: 24px;
+    }
+    .row .contentWrapper .content a{
+        padding: 10px 10px;
+    }
+}
